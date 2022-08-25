@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    top: 2px;
+    color: inherit;
+}
