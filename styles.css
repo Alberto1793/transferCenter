@@ -1,16 +1,25 @@
 .header {
-    background-color: #a8dadc ;
     padding: 10px;
+    text-align: center;
 }
 
-h1 {
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-top: 2rem;
     text-align: center;
 }
 
 ul {
-    margin-top: 10px;
+    margin-top: 2rem;
     text-align: center;
 
+}
+
+button {
+    margin: 10px;
 }
 
 li {
@@ -19,13 +28,8 @@ li {
     font-weight: bold;
 }
 
-a {
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-}
 
-a:hover {
-    top: 2px;
-    color: inherit;
+#monteLogo {
+    
+        width:150px;
 }

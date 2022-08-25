@@ -14,30 +14,31 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>Montefiore Transfer Center</h1>
-    </div>
+    <nav class="header navbar navbar-light bg-light ">
+        <img id="monteLogo" src="images/1280px-Montefiore_logo.svg.png" alt="">
+        <h2>Transfer Center</h2>
+    </nav>
 
     <div>
 
-        <ul>
-            <button class="btn btn-primary">
-                <li><a href="qgenda.html" target="_blank">QGenda</a></li>
+        <form>
+            <button onclick="window.open('qgenda.html')" class="btn btn-lg btn-primary">
+                QGenda
             </button>
 
-            <button class="btn btn-success">
-                <li><a href="internal.html" target="_blank">Montefiore Extensions</a></li>
+            <button onclick="window.open('internal.html')" class="btn btn-lg btn-success">
+                Montefiore Extensions
             </button>
-            <button class="btn btn-warning">
-                <li><a href="external.html" target="_blank">External Hospitals</a></li>
+            <button onclick="window.open('external.html')" class="btn btn-lg btn-warning">
+                External Extensions
             </button>
-            <button class="btn btn-danger">
-                <li><a href="http://intranet/MEHEARTSTEMI" target="_blank">STEMI</a></li>
+            <button onclick="window.open('http://intranet/MEHEARTSTEMI') " class="btn btn-lg btn-danger">
+                STEMI
             </button>
-            <button class="btn btn-danger">
-                <li><a href="http://intranet/STROKEPaging" target="_blank">Stroke</a></li>
+            <button onclick="window.open('http://intranet/STROKEPaging')" class="btn btn-lg btn-danger">
+                Stroke
             </button>
-        </ul>
+        </form>
     </div>
 
     <footer>
