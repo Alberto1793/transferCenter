@@ -1,8 +1,14 @@
+.header {
+    background-color: #a8dadc ;
+    padding: 10px;
+}
+
 h1 {
     text-align: center;
 }
 
 ul {
+    margin-top: 10px;
     text-align: center;
 
 }
