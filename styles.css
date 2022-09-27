@@ -32,8 +32,8 @@ li {
 
 
 #monteLogo {
-    
-        width:150px;
+
+    width: 150px;
 }
 
 #internal-ext {
@@ -46,11 +46,12 @@ li {
 footer {
     position: absolute;
     bottom: 0;
-   width: 100%;
+    width: 100%;
 }
 
 .external-table {
     text-align: center;
+    font-weight: bold;
 
-  
+
 }
