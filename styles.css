@@ -1,4 +1,20 @@
 
+
+/* External Extensions Tab */
+.external-table {
+    text-align: center;
+    font-weight: bold;
+}
+
+.hospital-title {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+
 .header {
     padding: 10px;
     text-align: center;
@@ -100,8 +116,6 @@ footer {
 .internal-wsq-table {
     margin-left: 50px;
 }
-
-
 .weiler-address,
 .weiler-header,
 .cham-address,
@@ -143,7 +157,4 @@ footer {
     background-color:rgb(255, 205, 214);
     font-weight: 500;
 }
-
-
-
 
