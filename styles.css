@@ -1,11 +1,10 @@
-
 .header {
     padding: 10px;
     text-align: center;
 }
 
-.tc-title {
-    margin-right: 9%;
+h2 {
+    text-align: center;
 }
 
 form {
@@ -33,9 +32,8 @@ li {
 
 
 #monteLogo {
-        margin-left: 9%;
-        width:150px;
-        height: 25px;
+
+    width: 150px;
 }
 
 #internal-ext {
@@ -51,99 +49,16 @@ footer {
     width: 100%;
 }
 
-
-
-/* INTERNAL Numbers Table styles */
-
-.internal-klau-table,
-.internal-nw-table,
-.internal-foreman-table,
-.internal-cham-table,
-.internal-weiler-table,
-.internal-wakefield-table,
-.internal-wsq-table {
-    width: 600px;
+/* External Extensions Tab */
+.external-table {
+    text-align: center;
+    font-weight: bold;
 }
 
-
-.directory-wrapper {
-    display: flex;
-    width: 1210px;
-    margin: 0 auto;
+.hospital-title {
+    text-align: center;
 }
 
-/* .right-directory {
-    margin-left: 20px;
-} */
-
-.left-directory,
-.right-directory {
-    width: 625px;
+h5 {
+    text-align: center;
 }
-
-.right-directory {
-    margin-left: 10px;
-}
-
-.internal-header {
-    margin: 0 auto;
-    width: 1210px;
-    padding: 10px;
-    padding-left: 20%;
-    background: rgb(213, 53, 133);
-    color: white;
-}
-
-/* .internal-wakefield-table,
-.internal-cham-table,
-.internal-weiler-table, 
-.internal-wsq-table {
-    margin-left: 50px;
-}
-
-
-.weiler-address,
-.weiler-header,
-.cham-address,
-.cham-header,
-.wakefield-address,
-.wakefield-header,
-.wsq-address,
-.wsq-header {
-    margin-left: 50px;
-} */
-
-
-
-/* .internal-klau-table th,
-.internal-nw-table th {
-    background-color: #413f3f;
-    color: white;
-    
-} */
-
-
-/* .internal-cham-table,
-.internal-weiler-table,
-.internal-wakefield-table,
-.internal-wsq-table {
-    width: 600px;
-} */
-
-.hospital-header,
-.hospital-address {
-    width: 600px;
-    height: 40px;
-    background-color: pink;
-    padding: 7px;
-    font-weight: 700;
-}
-
-.hospital-address {
-    background-color:rgb(255, 205, 214);
-    font-weight: 500;
-}
-
-
-
-
