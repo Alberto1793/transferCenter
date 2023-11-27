@@ -11,6 +11,6 @@ document.getElementById('openExternalBtn').onclick = function () {
 
 document.getElementById('openFaqBtn').onclick = function () {
   window.location = 'faq.html';
-  onClick.stopPropagation();
+
   return false;
 };
