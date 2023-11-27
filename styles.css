@@ -1,73 +1,66 @@
-
-
 /* External Extensions Tab */
 .external-table {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .hospital-title {
-    text-align: center;
+  text-align: center;
 }
 
 h5 {
-    text-align: center;
+  text-align: center;
 }
 
-
 .header {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .tc-title {
-    margin-right: 9%;
+  margin-right: 9%;
 }
 
 form {
-    margin-top: 2rem;
-    text-align: center;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 ul {
-    margin-top: 2rem;
-    text-align: center;
-
+  margin-top: 2rem;
+  text-align: center;
 }
 
 button {
-    margin: 5rem 1rem;
-    width: 15%;
-    height: 12rem;
+  margin: 3rem 1rem;
+  width: 15%;
+  height: 12rem;
 }
 
 li {
-    list-style-type: none;
-    margin: 10px;
-    font-weight: bold;
+  list-style-type: none;
+  margin: 10px;
+  font-weight: bold;
 }
 
-
 #monteLogo {
-        margin-left: 9%;
-        width:150px;
-        height: 25px;
+  margin-left: 9%;
+  width: 150px;
+  height: 25px;
 }
 
 #internal-ext {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-
-
 
 /* INTERNAL Numbers Table styles */
 
@@ -78,14 +71,13 @@ footer {
 .internal-weiler-table,
 .internal-wakefield-table,
 .internal-wsq-table {
-    width: 600px;
+  width: 600px;
 }
 
-
 .directory-wrapper {
-    display: flex;
-    width: 1210px;
-    margin: 0 auto;
+  display: flex;
+  width: 1210px;
+  margin: 0 auto;
 }
 
 /* .right-directory {
@@ -94,20 +86,20 @@ footer {
 
 .left-directory,
 .right-directory {
-    width: 625px;
+  width: 625px;
 }
 
 .right-directory {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .internal-header {
-    margin: 0 auto;
-    width: 1210px;
-    padding: 10px;
-    padding-left: 20%;
-    background: rgb(213, 53, 133);
-    color: white;
+  margin: 0 auto;
+  width: 1210px;
+  padding: 10px;
+  padding-left: 30rem;
+  background: rgb(213, 53, 133);
+  color: white;
 }
 
 /* .internal-wakefield-table,
@@ -127,15 +119,12 @@ footer {
     margin-left: 50px;
 } */
 
-
-
 /* .internal-klau-table th,
 .internal-nw-table th {
     background-color: #413f3f;
     color: white;
     
 } */
-
 
 /* .internal-cham-table,
 .internal-weiler-table,
@@ -146,15 +135,14 @@ footer {
 
 .hospital-header,
 .hospital-address {
-    width: 600px;
-    height: 40px;
-    background-color: pink;
-    padding: 7px;
-    font-weight: 700;
+  width: 600px;
+  height: 40px;
+  background-color: pink;
+  padding: 7px;
+  font-weight: 700;
 }
 
 .hospital-address {
-    background-color:rgb(255, 205, 214);
-    font-weight: 500;
+  background-color: rgb(255, 205, 214);
+  font-weight: 500;
 }
-
