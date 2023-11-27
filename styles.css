@@ -1,3 +1,7 @@
+body {
+  background-color: #d3d3d3;
+}
+
 /* External Extensions Tab */
 .external-table {
   text-align: center;
@@ -19,6 +23,7 @@ h5 {
 
 .tc-title {
   margin-right: 9%;
+  font-size: 1.5rem;
 }
 
 form {
