@@ -56,12 +56,6 @@ li {
   width: 50%;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 /* INTERNAL Numbers Table styles */
 
 .internal-klau-table,
