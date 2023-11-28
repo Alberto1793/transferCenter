@@ -3,6 +3,12 @@ body {
 }
 
 /* External Extensions Tab */
+
+#outsideEmergency,
+#insideEmergency {
+  font-size: 2rem;
+}
+
 .external-table {
   text-align: center;
   font-weight: bold;
