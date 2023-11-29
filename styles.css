@@ -1,5 +1,6 @@
 body {
   background-color: #6c757d;
+  text-align: center;
 }
 
 /* External Extensions Tab */
@@ -42,7 +43,7 @@ ul {
   text-align: center;
 }
 
-button {
+.btn-main {
   margin: 3rem 1rem;
   width: 15%;
   height: 12rem;
@@ -67,7 +68,7 @@ li {
   width: 50%;
 }
 
-/* INTERNAL Numbers Table styles */
+/* INTERNAL NUMBER TABLE STYLE */
 
 .internal-klau-table,
 .internal-nw-table,
@@ -97,7 +98,7 @@ li {
 .right-directory {
   margin-left: 10px;
 }
-
+/* HEADERS */
 .internal-header {
   margin: 0 auto;
   width: 1210px;
@@ -105,6 +106,15 @@ li {
   padding-left: 30rem;
   background: rgb(213, 53, 133);
   color: white;
+}
+
+.hospital-header,
+.hospital-address {
+  width: 600px;
+  height: 40px;
+  background-color: pink;
+  padding: 7px;
+  font-weight: 700;
 }
 
 /* .internal-wakefield-table,
@@ -138,16 +148,22 @@ li {
     width: 600px;
 } */
 
-.hospital-header,
-.hospital-address {
-  width: 600px;
-  height: 40px;
-  background-color: pink;
-  padding: 7px;
-  font-weight: 700;
-}
-
 .hospital-address {
   background-color: rgb(255, 205, 214);
   font-weight: 500;
+}
+
+/* INTERNAL HOSPITAL NAVBAR */
+
+.hospitalSelection {
+  color: black;
+  text-decoration: none;
+}
+
+.selection {
+  padding: 1rem;
+}
+
+.homeBtn {
+  text-align: center;
 }
