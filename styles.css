@@ -167,3 +167,12 @@ li {
 .homeBtn {
   text-align: center;
 }
+
+/* on call */
+
+select {
+  margin-top: 2rem;
+  margin-right: 12rem;
+  width: 20rem;
+  height: 2rem;
+}
