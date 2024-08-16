@@ -26,7 +26,12 @@
     <!-- List services as links to schedules -->
     <label for="service">Services:</label>
 
-    <select name="service" id="service" onchange="window.open('this.value')">
+    <select
+      class="services"
+      name="service"
+      id="service"
+      onchange="window.open('this.value')"
+    >
       <option value="default">Please Select</option>
 
       <!-- Gen Surg -->
@@ -134,7 +139,9 @@
         Oncology
       </option>
 
-      <option id="opto" value="opthalmology" disabled>
+      <!-- Opto -->
+
+      <option value="opthalmology" disabled>
         Opthalmology (Page Operator)
       </option>
 
@@ -176,7 +183,7 @@
 
       <!-- Lung Transplant -->
       <option
-        value="https://docs.google.com/document/d/1y9OGEQ-ZMSaID00NvhnRGO89haOQ9OxSbIqrxsfhwXQ/edit"
+        value="https://docs.google.com/document/d/1pj9LOKen10JAS5NLv_y8cu-wgpo97II5DuwGuOj6fCY/edit"
       >
         Transplant Lung
       </option>
