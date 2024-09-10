@@ -181,3 +181,7 @@ select {
 #oncallservices {
   font-size: 20px;
 }
+
+.faq {
+  display: flex;
+}
