@@ -175,4 +175,9 @@ select {
   margin-right: 12rem;
   width: 20rem;
   height: 2rem;
+  font-size: 20px;
+}
+
+#oncallservices {
+  font-size: 20px;
 }
