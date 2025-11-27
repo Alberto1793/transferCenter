@@ -14,57 +14,62 @@
     <link rel="icon" type="image/x-icon" href="/images/montefavicon.png" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="header navbar navbar-light" style="background-color: #adb5bd">
-      <a class="homeBtn" href="index.html">
-        <button class="btn btn-sm btn-light">HOME</button></a
-      >
-      <img id="monteLogo" src="images/1280px-Montefiore_logo.svg.png" alt="" />
-      <h2 class="tc-title" style="color: #003566">Information</h2>
-    </nav>
+    <div class="animated-bg"></div>
+    <div class="content-wrapper">
+      <!-- NAVBAR -->
+      <nav class="header navbar navbar-light">
+        <a class="homeBtn" href="index.html">
+          <button class="btn btn-sm btn-light home-button">HOME</button>
+        </a>
+        <img id="monteLogo" src="images/1280px-Montefiore_logo.svg.png" alt="Montefiore Logo" />
+        <h2 class="tc-title">Information</h2>
+      </nav>
 
-    <!-- MAIN BUTTONS -->
-    <form action="">
-      <div class="faq">
-        <button
-          onclick="window.open('https://docs.google.com/document/d/1znceNugXs3u5jHfsPr7XNncXmy5pCHChE2470PJoRaw/edit')"
-          class="btn btn-lg btn-info btn-main"
-        >
-          How to Find Services
-        </button>
-        <button
-          onclick="window.open('https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Furl7057.zollonline.com%2Fls%2Fclick%3Fupn%3DAhSd6fVtF7aYp3wi1negnYFP2XmRidOk9R43OnHjk9-2F5HM7L2f1Cq9WuUgCKxf0OeN2-2Buh75-2BGoIly-2Fu3zWMYw-3D-3Dj_vL_jCHnvfVmVXaNGpJqazWkClLozTIz7AsY4ThYVK-2FKCg8ky13BZ1LpsAgoEUhsAF1ZLYeKDvDRwZta9lgFrJKcsHxss5n2HCJonbmOQvVpcaMEIQFOg-2FdihWjact-2FY-2Bz2MoNR6qAYPHP9dmdZSbgTNrHUyjp2-2Fyeky63Ki-2BvsGp5hJXcaae1FlU-2FfAu7fYqRGXv9fj-2FfgqepYUk6qcFSFeiWSLneief71XSA-2B5LONKiL58tPrjo-2BnJDXyg155gyq5Wgxhgl20IoEw39-2FAra8S182rUeLL-2F73DmdtoUP4PaMBSc-2BGTNuhsuJ3k6Mf4TRAWyOxciANlAUXRuvGUn86KxhOV25lozC-2BBFD0yhgpqYGS-2Fmgl8-2BJ7aw-2F3kqGgTRxWK7&data=05%7C01%7Canazario%40montefiore.org%7C11d9b4610d814186fcea08db846820b4%7C9c01f0fd65e040c089a82dfd51e62025%7C0%7C0%7C638249354996849915%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=YscwjKluhrVmsckd1fXDkvM15Tz1DPpL67HudywiOdU%3D&reserved=0')"
-          class="btn btn-lg btn-info btn-main"
-        >
-          Zoll Empress Scheduling
-        </button>
-        <button
-          onclick="window.open('https://docs.google.com/document/d/11gqFFXrVChkylk3j_6pcq6FKtf1_NoGriskH63k_Whg/edit')"
-          class="btn btn-lg btn-info btn-main"
-        >
-          Stroke Terminology
-        </button>
+      <!-- MAIN BUTTONS -->
+      <div class="main-content">
+        <form action="">
+          <div class="button-row faq">
+            <button
+              onclick="window.open('https://docs.google.com/document/d/1znceNugXs3u5jHfsPr7XNncXmy5pCHChE2470PJoRaw/edit')"
+              class="btn btn-lg btn-info btn-main glass-btn"
+            >
+              <span class="btn-text">How to Find Services</span>
+            </button>
+            <button
+              onclick="window.open('https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Furl7057.zollonline.com%2Fls%2Fclick%3Fupn%3DAhSd6fVtF7aYp3wi1negnYFP2XmRidOk9R43OnHjk9-2F5HM7L2f1Cq9WuUgCKxf0OeN2-2Buh75-2BGoIly-2Fu3zWMYw-3D-3Dj_vL_jCHnvfVmVXaNGpJqazWkClLozTIz7AsY4ThYVK-2FKCg8ky13BZ1LpsAgoEUhsAF1ZLYeKDvDRwZta9lgFrJKcsHxss5n2HCJonbmOQvVpcaMEIQFOg-2FdihWjact-2FY-2Bz2MoNR6qAYPHP9dmdZSbgTNrHUyjp2-2Fyeky63Ki-2BvsGp5hJXcaae1FlU-2FfAu7fYqRGXv9fj-2FfgqepYUk6qcFSFeiWSLneief71XSA-2B5LONKiL58tPrjo-2BnJDXyg155gyq5Wgxhgl20IoEw39-2FAra8S182rUeLL-2F73DmdtoUP4PaMBSc-2BGTNuhsuJ3k6Mf4TRAWyOxciANlAUXRuvGUn86KxhOV25lozC-2BBFD0yhgpqYGS-2Fmgl8-2BJ7aw-2F3kqGgTRxWK7&data=05%7C01%7Canazario%40montefiore.org%7C11d9b4610d814186fcea08db846820b4%7C9c01f0fd65e040c089a82dfd51e62025%7C0%7C0%7C638249354996849915%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=YscwjKluhrVmsckd1fXDkvM15Tz1DPpL67HudywiOdU%3D&reserved=0')"
+              class="btn btn-lg btn-info btn-main glass-btn"
+            >
+              <span class="btn-text">Zoll Empress Scheduling</span>
+            </button>
+            <button
+              onclick="window.open('https://docs.google.com/document/d/11gqFFXrVChkylk3j_6pcq6FKtf1_NoGriskH63k_Whg/edit')"
+              class="btn btn-lg btn-info btn-main glass-btn"
+            >
+              <span class="btn-text">Stroke Terminology</span>
+            </button>
+          </div>
+          <div class="button-row faq">
+            <button
+              onclick="window.open('https://docs.google.com/presentation/d/1RsbYM0H_fSIWai97b0YfYm_kTdnULyD1/edit#slide=id.p1')"
+              class="btn btn-lg btn-info btn-main glass-btn"
+            >
+              <span class="btn-text">White Plains Stroke Workflow</span>
+            </button>
+            <button
+              onclick="window.open('https://www.amion.com/')"
+              class="btn btn-lg btn-info btn-main glass-btn"
+            >
+              <span class="btn-text">Amion (WP Stroke Schedule)</span>
+            </button>
+            <button
+              onclick="window.open('https://docs.google.com/document/d/1RfDYh7VNzTmFWEs5ArX7_g9-cihqr4Bg8BoG6khdVZ0/edit#heading=h.jo1qswxzbvs9')"
+              class="btn btn-lg btn-info btn-main glass-btn"
+            >
+              <span class="btn-text">STEMI Information</span>
+            </button>
+          </div>
+        </form>
       </div>
-      <div class="faq">
-        <button
-          onclick="window.open('https://docs.google.com/presentation/d/1RsbYM0H_fSIWai97b0YfYm_kTdnULyD1/edit#slide=id.p1')"
-          class="btn btn-lg btn-info btn-main"
-        >
-          White Plains Stroke Workflow
-        </button>
-        <button
-          onclick="window.open('https://www.amion.com/')"
-          class="btn btn-lg btn-info btn-main"
-        >
-          Amion (WP Stroke Schedule)
-        </button>
-        <button
-          onclick="window.open('https://docs.google.com/document/d/1RfDYh7VNzTmFWEs5ArX7_g9-cihqr4Bg8BoG6khdVZ0/edit#heading=h.jo1qswxzbvs9')"
-          class="btn btn-lg btn-info btn-main"
-        >
-          STEMI Information
-        </button>
-      </div>
-    </form>
+    </div>
   </body>
 </html>

@@ -17,34 +17,42 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="header navbar navbar-light" style="background-color: #adb5bd;"">
-      <a class="homeBtn" href="index.html"
-      >
-        <button class="btn btn-sm btn-light">
-         HOME
-        </button></a>
-      <img id="monteLogo" src="images/1280px-Montefiore_logo.svg.png" alt="" />
-      <h2 class="tc-title" style="color: #003566">External Hospitals</h2>
-    </nav>
+    <div class="animated-bg"></div>
+    <div class="content-wrapper">
+      <!-- NAVBAR -->
+      <nav class="header navbar navbar-light">
+          <div class="header-left">
+    <a class="homeBtn" href="index.html">
+      <button class="btn btn-sm btn-light home-button">HOME</button>
+    </a>
+    <div class="logo-wrapper">
+       <img
+      id="monteLogo"
+      src="images/1280px-Montefiore_logo.svg.png"
+      alt="Montefiore Logo"
+    />
+      <img class="santa-hat" src="images/santahat.png" alt="Santa Hat" />
+    </div>
+  </div>
+      </nav>
 
-    <!-- MAIN BUTTONS -->
-    <ul>
-      <button
-      onclick="window.open('https://docs.google.com/document/d/19ob9-ZHFWbyQ8jnMzj6GiIWQlI_91UxxlOa04zYXKZM/edit?usp=sharing')"
-      class="btn btn-lg btn-warning btn-main"
-    >
-      Floors
-    </button>
-    <button
-      onclick="window.open('emergencyRooms.html')"
-      class="btn btn-lg btn-warning btn-main"
-    >
-      Emergency Rooms
-    </button>
-    </ul>
-   
-    <!-- HOME BUTTON -->
-
+      <!-- MAIN BUTTONS -->
+      <div class="main-content">
+        <div class="button-row">
+          <button
+            onclick="window.open('https://docs.google.com/document/d/19ob9-ZHFWbyQ8jnMzj6GiIWQlI_91UxxlOa04zYXKZM/edit?usp=sharing')"
+            class="btn btn-lg btn-warning btn-main glass-btn"
+          >
+            <span class="btn-text">Floors</span>
+          </button>
+          <button
+            onclick="window.open('emergencyRooms.html')"
+            class="btn btn-lg btn-warning btn-main glass-btn"
+          >
+            <span class="btn-text">Emergency Rooms</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
