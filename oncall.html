@@ -17,22 +17,37 @@
     <link rel="icon" type="image/x-icon" href="/images/montefavicon.png" />
   </head>
   <body>
-    <nav class="header navbar navbar-light" style="background-color: #adb5bd">
-      <a class="homeBtn" href="index.html">
-        <button class="btn btn-sm btn-light">HOME</button></a
-      >
-      <img id="monteLogo" src="images/1280px-Montefiore_logo.svg.png" alt="" />
-      <h2 class="tc-title" style="color: #003566">On Call Schedules</h2>
-    </nav>
-    <!-- List services as links to schedules -->
-    <label id="oncallservices" for="service">Services:</label>
+    <div class="animated-bg"></div>
+    <div class="content-wrapper">
+<nav class="header navbar navbar-light">
+  <div class="header-left">
+    <a class="homeBtn" href="index.html">
+      <button class="btn btn-sm btn-light home-button">HOME</button>
+    </a>
+    <div class="logo-wrapper">
+       <img
+      id="monteLogo"
+      src="images/1280px-Montefiore_logo.svg.png"
+      alt="Montefiore Logo"
+    />
+      <img class="santa-hat" src="images/santahat.png" alt="Santa Hat" />
+    </div>
+  </div>
 
-    <select
-      class="services"
-      name="service"
-      id="service"
-      onchange="window.open('this.value')"
-    >
+  <h2 class="tc-title">On Call Schedules</h2>
+</nav>
+
+      
+      <div class="oncall-content">
+        <div class="oncall-container">
+          <label id="oncallservices" for="service">Select a Service:</label>
+
+          <select
+            class="services glass-select"
+            name="service"
+            id="service"
+            onchange="window.open('this.value')"
+          >
       <optgroup>
         -- Please Select --
         <option value="default">Please Select</option>
@@ -315,14 +330,17 @@
         >
           Vascular Surgery
         </option>
-      </optgroup>
-    </select>
+          </optgroup>
+          </select>
+        </div>
+      </div>
+    </div>
 
     <script>
       window.onload = function () {
         document.getElementById('service').onchange = function () {
           var href = this.value;
-          if (href) {
+          if (href && href !== 'default') {
             var win = window.open(href, '_blank');
           }
         };

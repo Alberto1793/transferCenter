@@ -12,68 +12,86 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/images/montefavicon.png" />
     <!-- CSS only -->
   </head>
 
   <body>
-    <nav class="header navbar navbar-light" style="background-color: #adb5bd">
-      <img id="monteLogo" src="images/1280px-Montefiore_logo.svg.png" alt="" />
-      <h2 class="tc-title" style="color: #003566">Transfer Center</h2>
-    </nav>
+    <div class="animated-bg"></div>
+    <div class="content-wrapper">
+      <nav class="header navbar navbar-light">
+<div class="logo-wrapper">
+  <img id="monteLogo" src="images/1280px-Montefiore_logo.svg.png" alt="Montefiore Logo" />
+  <img class="santa-hat" src="images/santahat.png" alt="Santa Hat" />
+</div>
+        <h2 class="tc-title">Command Center</h2>
+      </nav>
 
-    <div>
-      <form>
-        <!-- FIGURE OUT HOW TO OPEN LINK ON SAME PAGE FOR QGENDA AND EXTERNAL EXTENSIONS -->
-        <div>
-          <!-- <button id="openQgendaBtn" class="btn btn-lg btn-primary btn-main">
-            QGenda
-          </button> -->
+      <div class="main-content">
+        <form>
+          <!-- FIGURE OUT HOW TO OPEN LINK ON SAME PAGE FOR QGENDA AND EXTERNAL EXTENSIONS -->
+          <div class="button-row">
+            <!-- <button id="openQgendaBtn" class="btn btn-lg btn-primary btn-main">
+              QGenda
+            </button> -->
 
-          <button
-            onclick="window.open('internal.html')"
-            class="btn btn-lg btn-success btn-main"
-          >
-            Montefiore Extensions
-          </button>
+            <button
+              onclick="window.open('internal.html')"
+              class="btn btn-lg btn-success btn-main glass-btn">
+              <span class="btn-text">Montefiore Extensions</span>
+            </button>
 
-          <button id="openOncallBtn" class="btn btn-lg btn-primary btn-main">
-            On Call Schedules
-          </button>
+            <button id="openOncallBtn" class="btn btn-lg btn-primary btn-main glass-btn">
+              <span class="btn-text">On Call Schedules</span>
+            </button>
 
-          <button id="openExternalBtn" class="btn btn-lg btn-warning btn-main">
-            External Hospitals
-          </button>
-        </div>
-        <div>
-          <button
-            onclick="window.open('https://manager.everbridge.net/saml/login/MonteManagerPortal') "
-            class="btn btn-lg btn-danger btn-main"
-          >
-            STEMI
-          </button>
-          <button
-            onclick="window.open('http://intranet/STROKEPaging')"
-            class="btn btn-lg btn-danger btn-main"
-          >
-            STROKE
-          </button>
-          <!-- ADD URL TO HOW TO FIND SERVICES PAGE -->
-          <button id="openFaqBtn" class="btn btn-lg btn-info btn-main">
-            Information
-          </button>
-        </div>
-        <footer>
-          <ul style="color: white">
-            <li>Transfer Center: 718-920-2800</li>
-            <li>Empress Ambulance: 914-965-5040</li>
-            <li>Fax: 914-968-2909 or 914-968-3689</li>
-          </ul>
-        </footer>
-      </form>
+            <button id="openExternalBtn" class="btn btn-lg btn-warning btn-main glass-btn holiday-snowcap">
+              <span class="btn-text">External Hospitals</span>
+            </button>
+          </div>
+          <div class="button-row">
+            <button
+              onclick="window.open('https://manager.everbridge.net/saml/login/MonteManagerPortal')"
+              class="btn btn-lg btn-danger btn-main glass-btn"
+            >
+              <span class="btn-text">STEMI</span>
+            </button>
+            <button
+              onclick="window.open('http://intranet/STROKEPaging')"
+              class="btn btn-lg btn-danger btn-main glass-btn"
+            >
+              <span class="btn-text">STROKE</span>
+            </button>
+            <!-- ADD URL TO HOW TO FIND SERVICES PAGE -->
+            <button id="openFaqBtn" class="btn btn-lg btn-info btn-main glass-btn">
+              <span class="btn-text">Information</span>
+            </button>
+          </div>
+<footer class="modern-footer">
+  <ul>
+    <li>
+      <span class="footer-label">Transfer Center</span>
+      <span class="footer-value">718-920-2800</span>
+    </li>
+    <li>
+      <span class="footer-label">Empress Ambulance</span>
+      <span class="footer-value">914-965-5040</span>
+    </li>
+    <li>
+      <span class="footer-label">Fax</span>
+      <span class="footer-value">914-968-2909 or 914-968-3689</span>
+    </li>
+  </ul>
+</footer>
+
+        </form>
+      </div>
     </div>
 
     <script src="app.js"></script>
+    <div class="snow"></div>
+    <div class="winter-forest"></div>
   </body>
 </html>

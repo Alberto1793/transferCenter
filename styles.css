@@ -1,13 +1,138 @@
+/* Modern Animated Background */
 body {
-  background-color: #6c757d;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+/*regular bg*/
+
+
+
+/* .animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #375a96, #476aa5);
+  box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+  z-index: -1; */
+
+  /* Holiday background */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background-image: url("images/winter-bg.png");
+  background-size: cover;
+  background-position: center 60%; /* keeps hills at bottom */
+  background-repeat: no-repeat;
+
+  /* optional soft vignette for depth */
+  box-shadow: none;
+}
+
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Emergency Rooms / External Pages Styling */
+.emergency-content {
+  flex: 1;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.glass-table-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  overflow: hidden;
+}
+
+.modern-table {
+  color: rgba(255, 255, 255, 0.95) !important;
+  margin-bottom: 0;
+  background: transparent;
+}
+
+.modern-table thead {
+  background: rgba(173, 181, 189, 0.3) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.modern-table thead th {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 15px;
   text-align: center;
 }
 
-/* External Extensions Tab */
+.modern-table tbody tr {
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.modern-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.modern-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.01);
+}
+
+.modern-table tbody td {
+  color: rgba(255, 255, 255, 0.9) !important;
+  border: none;
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: 500;
+}
 
 #outsideEmergency,
 #insideEmergency {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .external-table {
@@ -23,30 +148,315 @@ h5 {
   text-align: center;
 }
 
+/* Modern Header */
 .header {
-  padding: 10px;
-  text-align: center;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.20) 10%,
+    rgba(20, 40, 75, 0.95) 40%,
+    rgba(7, 27, 53, 1) 100%
+  );
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* glow effects */
+  box-shadow: inset 40px 0 60px rgba(255, 255, 255, 0.25),
+              0 12px 40px rgba(0, 0, 0, 0.55);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  position: relative;
+  z-index: 10;
+}
+
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .tc-title {
-  margin-right: 9%;
-  font-size: 1.5rem;
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+  letter-spacing: 0.06em;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 form {
-  margin-top: 2rem;
+  width: 100%;
+  max-width: 1400px;
   text-align: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Glassmorphism Buttons */
+.btn-main {
+  margin: 0;
+  width: 280px;
+  height: 160px;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.btn-main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.04),
+    transparent
+  );
+  /* NO heavy blur */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  border-radius: 20px;
+  z-index: 1;
+}
+
+
+.btn-main .btn-text {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+/* Fallback for buttons without .btn-text span */
+.btn-main:not(.glass-btn) {
+  color: white !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+/* .glass-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255,255,255,0.45) 0%,
+    rgba(255,255,255,0.15) 40%,
+    transparent 100%
+  );
+  pointer-events: none;
+} */
+
+
+/* .glass-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.glass-btn {
+  position: relative;
+  overflow: hidden;
+
+  /* existing stuff stays… then add: */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-image: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.02)
+  );
+}
+
+/* Button Color Variants with Glassmorphism */
+.btn-main.btn-success {
+  background: linear-gradient(135deg, #2ecc71aa, #27ae60dd);
+}
+
+.btn-main.btn-success:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 40px 0 rgba(25, 135, 84, 0.5);
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.btn-main.btn-primary {
+  background: linear-gradient(135deg, #3b82f6aa, #2563ebdd);
+}
+
+.btn-main.btn-primary:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 40px 0 rgba(13, 110, 253, 0.5);
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.btn-main.btn-warning {
+  background: linear-gradient(135deg, #facc15aa, #eab308dd);
+}
+
+.btn-main.btn-warning:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 40px 0 rgba(255, 193, 7, 0.5);
+  background: linear-gradient(135deg, #facc15, #eab308);
+}
+
+.btn-main.btn-danger {
+  background: linear-gradient(135deg, #ef4444aa, #dc2626dd);
+}
+
+.btn-main.btn-danger:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 40px 0 rgba(220, 53, 69, 0.5);
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.btn-main.btn-info {
+  background: linear-gradient(135deg, rgba(13, 202, 240, 0.3), rgba(13, 202, 240, 0.5));
+}
+
+.btn-main.btn-info:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 40px 0 rgba(13, 202, 240, 0.5);
+  background: linear-gradient(135deg, rgba(13, 202, 240, 0.5), rgba(13, 202, 240, 0.7));
+}
+
+.btn-main:active {
+  transform: translateY(-4px) scale(1.02);
 }
 
 ul {
-  margin-top: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.btn-main {
-  margin: 3rem 1rem;
-  width: 15%;
-  height: 12rem;
+/* Modern Footer */
+.modern-footer {
+  margin: 200px auto 40px;
+  padding: 30px 40px;
+  max-width: 1100px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.footer-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2px;
+}
+
+.footer-value {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+.modern-footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.modern-footer li {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.modern-footer li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 li {
@@ -56,9 +466,17 @@ li {
 }
 
 #monteLogo {
-  margin-left: 9%;
-  width: 150px;
-  height: 25px;
+  margin: 0;
+  width: 190px;
+  height: 36px;
+  /* filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3)); */
+  filter: drop-shadow(0 2px 6px rgba(255, 255, 255, 0.25));
+  transition: transform 0.3s ease;
+}
+
+
+#monteLogo:hover {
+  transform: scale(1.05);
 }
 
 #internal-ext {
@@ -164,13 +582,119 @@ li {
   padding: 1rem;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* space between HOME and logo */
+}
 .homeBtn {
   text-align: center;
 }
 
-/* on call */
+/* On Call Page Styling */
+.oncall-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-out 0.3s both;
+  margin-top: 400px;
+}
 
-select {
+.oncall-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 50px 40px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+#oncallservices {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.glass-select {
+  width: 100%;
+  padding: 18px 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.glass-select:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.glass-select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(0, 53, 102, 0.6);
+  box-shadow: 0 0 0 3px rgba(0, 53, 102, 0.3), 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.glass-select option {
+  background: #1a1a2e;
+  color: rgba(255, 255, 255, 0.95);
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.glass-select option:checked {
+  background: rgba(0, 53, 102, 0.5);
+  color: white;
+}
+
+.home-button {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+  font-weight: 500;
+  padding: 4px 14px;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+
+}
+
+.home-button:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Legacy select styling for other pages */
+select:not(.glass-select) {
   margin-top: 2rem;
   margin-right: 12rem;
   width: 20rem;
@@ -178,11 +702,201 @@ select {
   font-size: 20px;
 }
 
-#oncallservices {
-  font-size: 20px;
-}
-
 .faq {
   justify-content: center;
-  ;
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .button-row {
+    gap: 20px;
+  }
+  
+  .btn-main {
+    width: 240px;
+    height: 140px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+ .tc-title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.06em;
+}
+
+  
+  #monteLogo {
+    width: 150px;
+    height: 25px;
+  }
+  
+  .button-row {
+    gap: 15px;
+  }
+  
+  .btn-main {
+    width: 200px;
+    height: 120px;
+    font-size: 0.9rem;
+  }
+  
+.modern-footer li {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease;
+}
+  
+  .modern-footer li {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+      font-weight: 300;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  }
+
+.footer-value {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 20px 10px;
+  }
+  
+  .btn-main {
+    width: 100%;
+    max-width: 280px;
+    height: 100px;
+  }
+  
+  .tc-title {
+    font-size: 1.2rem;
+  }
+  
+  .oncall-container {
+    padding: 30px 20px;
+  }
+  
+  #oncallservices {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .glass-select {
+    padding: 15px 20px;
+    font-size: 1rem;
+    padding-right: 45px;
+  }
+}
+
+/* Santa Hat Overlay */
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.santa-hat {
+  position: absolute;
+  width: 48px;
+  top: -19px;
+  right: -21px;     /* was 42px — big reduction */
+  transform: rotate(20deg);
+  z-index: 10;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.25));
+}
+
+
+
+
+
+/* -------- HOLIDAY SNOW LAYER -------- */
+.snow-fx {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+
+  /* DEBUG: temporary background to prove it's visible */
+  /* background: rgba(255, 0, 0, 0.1); */
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  animation-name: snow-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+
+/* @keyframes snow-fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(120vh);
+  }
+} */
+
+@keyframes snow-fall {
+  0% {
+    transform: translateX(0px) translateY(0);
+  }
+  100% {
+    transform: translateX(30px) translateY(120vh);
+  }
+}
+
+/* Button snowcaps */
+.holiday-snowcap {
+  position: relative;
+  overflow: visible;
+}
+
+/* Snow PNG without distortion */
+.holiday-snowcap::before {
+  content: "";
+  position: absolute;
+  top: -135px;       /* move snow above button */
+  left: 87%;
+  transform: translateX(-50%);
+
+  width: 40%;      /* wide enough to overhang */
+  padding-top: 6%;  /* 🔥 maintains aspect ratio based on width */
+  
+  background: url("images/snowcap4.png") no-repeat center;
+  background-size: 100% auto;  /* width stretches, height stays correct */
+  
+  pointer-events: none;
+  z-index: 10;
 }
