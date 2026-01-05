@@ -4,51 +4,76 @@
 //   return false;
 // };
 
-document.getElementById('openExternalBtn').onclick = function () {
-  window.location = 'external.html';
-  return false;
-};
 
-document.getElementById('openFaqBtn').onclick = function () {
-  window.location = 'faq.html';
 
-  return false;
-};
 
-document.getElementById('openOncallBtn').onclick = function () {
-  window.location = 'oncall.html';
+// document.getElementById('openExternalBtn').onclick = function () {
+//   window.location = 'external.html';
+//   return false;
+// };
 
-  return false;
-};
+// document.getElementById('openFaqBtn').onclick = function () {
+//   window.location = 'faq.html';
 
-// -------- HOLIDAY SNOW (BRUTE FORCE VERSION) --------
+//   return false;
+// };
+
+// document.getElementById('openOncallBtn').onclick = function () {
+//   window.location = 'oncall.html';
+
+//   return false;
+// };
+
+
+
+// CODE FOR XMAS IS BELOW -----------
+// // -------- HOLIDAY SNOW (BRUTE FORCE VERSION) --------
+// (function () {
+//   console.log("Snow script starting…");
+
+//   const snowWrapper = document.createElement('div');
+//   snowWrapper.className = 'snow-fx';
+//   document.body.appendChild(snowWrapper);
+
+//   const FLAKES = 80; // change for more/less snow
+
+//   for (let i = 0; i < FLAKES; i++) {
+//     const flake = document.createElement('span');
+//     flake.className = 'snowflake';
+//     flake.textContent = '•';
+//     flake.style.color = "white";
+//     flake.style.fontWeight = "bold";
+//     flake.style.opacity = Math.random() * 0.8 + 0.2;
+
+
+//     flake.style.left = Math.random() * 100 + 'vw';
+//     flake.style.fontSize = (10 + Math.random() * 18) + 'px';
+//     flake.style.animationDelay = (Math.random() * 8) + 's';
+//     flake.style.animationDuration = (8 + Math.random() * 10) + 's';
+//     flake.style.opacity = (0.4 + Math.random() * 0.6);
+
+//     snowWrapper.appendChild(flake);
+//   }
+
+//   console.log("Snow created:", snowWrapper.children.length, "flakes");
+// })();
+
 (function () {
-  console.log("Snow script starting…");
+  const sparkle = document.createElement('div');
+  sparkle.className = 'snow-fx sparkle-band';
+  document.body.appendChild(sparkle);
 
-  const snowWrapper = document.createElement('div');
-  snowWrapper.className = 'snow-fx';
-  document.body.appendChild(snowWrapper);
+  const DOTS = 70;
 
-  const FLAKES = 80; // change for more/less snow
+  for (let i = 0; i < DOTS; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'snowflake';
+    dot.textContent = '•';
 
-  for (let i = 0; i < FLAKES; i++) {
-    const flake = document.createElement('span');
-    flake.className = 'snowflake';
-    flake.textContent = '•';
-    flake.style.color = "white";
-    flake.style.fontWeight = "bold";
-    flake.style.opacity = Math.random() * 0.8 + 0.2;
+    dot.style.left = (25 + Math.random() * 50) + 'vw';
+    dot.style.opacity = Math.random() * 0.6 + 0.3;
+    dot.style.fontSize = (10 + Math.random() * 20) + 'px';
 
-
-    flake.style.left = Math.random() * 100 + 'vw';
-    flake.style.fontSize = (10 + Math.random() * 18) + 'px';
-    flake.style.animationDelay = (Math.random() * 8) + 's';
-    flake.style.animationDuration = (8 + Math.random() * 10) + 's';
-    flake.style.opacity = (0.4 + Math.random() * 0.6);
-
-    snowWrapper.appendChild(flake);
+    sparkle.appendChild(dot);
   }
-
-  console.log("Snow created:", snowWrapper.children.length, "flakes");
 })();
-

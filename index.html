@@ -24,7 +24,7 @@
       <nav class="header navbar navbar-light">
 <div class="logo-wrapper">
   <img id="monteLogo" src="images/1280px-Montefiore_logo.svg.png" alt="Montefiore Logo" />
-  <img class="santa-hat" src="images/santahat.png" alt="Santa Hat" />
+  <!-- <img class="santa-hat" src="images/santahat.png" alt="Santa Hat" /> -->
 </div>
         <h2 class="tc-title">Command Center</h2>
       </nav>
@@ -43,12 +43,18 @@
               <span class="btn-text">Montefiore Extensions</span>
             </button>
 
-            <button id="openOncallBtn" class="btn btn-lg btn-primary btn-main glass-btn">
+            <button 
+              onclick="window.open('oncall.html')"
+              id="openOncallBtn" 
+              class="btn btn-lg btn-primary btn-main glass-btn">
               <span class="btn-text">On Call Schedules</span>
             </button>
 
-            <button id="openExternalBtn" class="btn btn-lg btn-warning btn-main glass-btn holiday-snowcap">
-              <span class="btn-text">External Hospitals</span>
+            <button 
+            onclick="window.open('external.html')"
+            id="openExternalBtn" 
+            class="btn btn-lg btn-warning btn-main glass-btn holiday-snowcap">
+            <span class="btn-text">External Hospitals</span>
             </button>
           </div>
           <div class="button-row">
@@ -65,7 +71,10 @@
               <span class="btn-text">STROKE</span>
             </button>
             <!-- ADD URL TO HOW TO FIND SERVICES PAGE -->
-            <button id="openFaqBtn" class="btn btn-lg btn-info btn-main glass-btn">
+            <button 
+            onclick="window.open('faq.html')"
+            id="openFaqBtn" 
+            class="btn btn-lg btn-info btn-main glass-btn">
               <span class="btn-text">Information</span>
             </button>
           </div>
