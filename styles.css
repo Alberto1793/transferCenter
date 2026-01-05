@@ -12,7 +12,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-
 /*regular bg*/
 
 
@@ -31,17 +30,17 @@ body {
   /* Holiday background */
 .animated-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: -1;
 
-  background-image: url("images/winter-bg.png");
+  /* background-image: url("images/winter-bg3.png"); */
+  background-image: image-set(
+    url("images/winter-bg3.png") 1x,
+    url("images/winter-bg3@2x.png") 2x
+  );
   background-size: cover;
-  background-position: center 60%; /* keeps hills at bottom */
+  background-position: center 60%;
   background-repeat: no-repeat;
-
   /* optional soft vignette for depth */
   box-shadow: none;
 }
@@ -206,6 +205,8 @@ h5 {
   justify-content: center;
   padding: 40px 20px;
   animation: fadeIn 1s ease-out 0.3s both;
+    overflow-y: hidden;
+
 }
 
 @keyframes fadeIn {
@@ -765,12 +766,12 @@ select:not(.glass-select) {
   transition: all 0.3s ease;
 }
   
-  .modern-footer li {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-      font-weight: 300;
+.modern-footer li {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  font-weight: 300;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-  }
+}
 
 .footer-value {
   display: block;
@@ -811,29 +812,27 @@ select:not(.glass-select) {
   }
 }
 
+
 /* Santa Hat Overlay */
-.logo-wrapper {
+/* .logo-wrapper {
   position: relative;
   display: inline-block;
-}
+} */
 
-.santa-hat {
+/* .santa-hat {
   position: absolute;
   width: 48px;
   top: -19px;
-  right: -21px;     /* was 42px — big reduction */
+  right: -21px; 
   transform: rotate(20deg);
   z-index: 10;
   pointer-events: none;
   filter: drop-shadow(0 2px 3px rgba(0,0,0,0.25));
-}
-
-
-
+} */
 
 
 /* -------- HOLIDAY SNOW LAYER -------- */
-.snow-fx {
+/* .snow-fx {
   position: fixed;
   top: 0;
   left: 0;
@@ -841,11 +840,11 @@ select:not(.glass-select) {
   height: 100vh;
   pointer-events: none;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 9999; 
 
-  /* DEBUG: temporary background to prove it's visible */
-  /* background: rgba(255, 0, 0, 0.1); */
 }
+
+
 
 .snowflake {
   position: absolute;
@@ -868,35 +867,53 @@ select:not(.glass-select) {
   }
 } */
 
-@keyframes snow-fall {
+/* @keyframes snow-fall {
   0% {
     transform: translateX(0px) translateY(0);
   }
   100% {
     transform: translateX(30px) translateY(120vh);
   }
-}
+} */
 
 /* Button snowcaps */
-.holiday-snowcap {
+/* .holiday-snowcap {
   position: relative;
   overflow: visible;
-}
+} */
 
 /* Snow PNG without distortion */
-.holiday-snowcap::before {
+/* .holiday-snowcap::before {
   content: "";
   position: absolute;
-  top: -135px;       /* move snow above button */
+  top: -135px; 
   left: 87%;
   transform: translateX(-50%);
 
-  width: 40%;      /* wide enough to overhang */
-  padding-top: 6%;  /* 🔥 maintains aspect ratio based on width */
+  width: 40%; 
+  padding-top: 6%; 
   
   background: url("images/snowcap4.png") no-repeat center;
-  background-size: 100% auto;  /* width stretches, height stays correct */
-  
+  background-size: 100% auto;
   pointer-events: none;
   z-index: 10;
+} */
+
+/* Sparkle band container */
+.sparkle-band {
+  position: fixed;
+  bottom: 5px;              /* <-- adjust this to move it up/down */
+  left: 0;
+  width: 100%;
+  height: 30px;
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* Individual dots */
+.sparkle-band .snowflake {
+  position: absolute;
+  top: 0;
+  color: rgba(255,255,255,0.9);
+  filter: blur(0.2px);
 }
