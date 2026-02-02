@@ -33,27 +33,19 @@ body {
   inset: 0;
   z-index: -1;
 
-    /* Fallback that works everywhere */
+  /*fallback */
   background-image: url("images/winter-bg3.png");
 
-  /* Higher-res where supported */
-  background-image: -webkit-image-set(
-    url("images/winter-bg3.png") 1x,
-    url("images/winter-bg3@2x.png") 2x
-  );
-
-  /* background-image: url("images/winter-bg3.png"); */
+  /* hi-res*/
   background-image: image-set(
     url("images/winter-bg3.png") 1x,
     url("images/winter-bg3@2x.png") 2x
   );
+
   background-size: cover;
   background-position: center 60%;
   background-repeat: no-repeat;
-  /* optional soft vignette for depth */
-  box-shadow: none;
 }
-
 
 @keyframes gradientShift {
   0% {
@@ -927,3 +919,4 @@ select:not(.glass-select) {
   filter: blur(0.2px);
 
 }
+
