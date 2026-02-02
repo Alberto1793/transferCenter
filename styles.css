@@ -33,6 +33,15 @@ body {
   inset: 0;
   z-index: -1;
 
+    /* Fallback that works everywhere */
+  background-image: url("images/winter-bg3.png");
+
+  /* Higher-res where supported */
+  background-image: -webkit-image-set(
+    url("images/winter-bg3.png") 1x,
+    url("images/winter-bg3@2x.png") 2x
+  );
+
   /* background-image: url("images/winter-bg3.png"); */
   background-image: image-set(
     url("images/winter-bg3.png") 1x,
@@ -916,4 +925,5 @@ select:not(.glass-select) {
   top: 0;
   color: rgba(255,255,255,0.9);
   filter: blur(0.2px);
+
 }
