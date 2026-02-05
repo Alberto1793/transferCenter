@@ -33,18 +33,12 @@ body {
   inset: 0;
   z-index: -1;
 
-  /* background-image: url("images/winter-bg3.png"); */
-  background-image: image-set(
-    url("images/winter-bg3.png") 1x,
-    url("images/winter-bg3@2x.png") 2x
-  );
+  /*fallback */
+  background: url("images/winter-bg3.png");
   background-size: cover;
   background-position: center 60%;
   background-repeat: no-repeat;
-  /* optional soft vignette for depth */
-  box-shadow: none;
 }
-
 
 @keyframes gradientShift {
   0% {
@@ -916,4 +910,7 @@ select:not(.glass-select) {
   top: 0;
   color: rgba(255,255,255,0.9);
   filter: blur(0.2px);
+
 }
+
+
