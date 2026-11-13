@@ -57,23 +57,3 @@
 
 //   console.log("Snow created:", snowWrapper.children.length, "flakes");
 // })();
-
-(function () {
-  const sparkle = document.createElement('div');
-  sparkle.className = 'snow-fx sparkle-band';
-  document.body.appendChild(sparkle);
-
-  const DOTS = 70;
-
-  for (let i = 0; i < DOTS; i++) {
-    const dot = document.createElement('span');
-    dot.className = 'snowflake';
-    dot.textContent = '•';
-
-    dot.style.left = (25 + Math.random() * 50) + 'vw';
-    dot.style.opacity = Math.random() * 0.6 + 0.3;
-    dot.style.fontSize = (10 + Math.random() * 20) + 'px';
-
-    sparkle.appendChild(dot);
-  }
-})();
